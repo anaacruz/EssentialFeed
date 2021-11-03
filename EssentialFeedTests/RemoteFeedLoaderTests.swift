@@ -52,10 +52,9 @@ class RemoteFeedLoaderTests: XCTestCase {
         let samples = [199, 201, 300, 400, 500]
         
         samples.enumerated().forEach { index, code in
-            
             expect(sut, toCompleteWith: .failure(.invalidData), when: {
-                
-                client.complete(withStatusCode: 200, at: index)
+                let json = makeItemsJSON([])
+                client.complete(withStatusCode: code, data: json, at: index)
             })
             
         }
@@ -135,12 +134,9 @@ class RemoteFeedLoaderTests: XCTestCase {
     }
     
     private func expect(_ sut: RemoteFeedLoader, toCompleteWith result: RemoteFeedLoader.Result, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
-        
         var capturedResults = [RemoteFeedLoader.Result]()
         sut.load { capturedResults.append($0)}
-        
         action()
-        
         XCTAssertEqual(capturedResults,
                        [result],
                        file: file, line: line)
@@ -150,26 +146,20 @@ class RemoteFeedLoaderTests: XCTestCase {
         
         private var messages = [(url: URL, completion:
                                     (HTTPClientResutl) -> Void)]()
-        
         var requestedURLs: [URL] {
-            return messages.map { $0.url
-            
-            }
+            return messages.map { $0.url}
         }
         
         func get(from url: URL, completion: @escaping
              (HTTPClientResutl) -> Void) {
-            
             messages.append((url, completion))
-
         }
         
         func complete(with error: Error, at index: Int = 0) {
             messages[index].completion(.failure(error))
-            
         }
         
-        func complete(withStatusCode code: Int, data: Data = Data(), at index: Int = 0 ) {
+        func complete(withStatusCode code: Int, data: Data, at index: Int = 0 ) {
             let response = HTTPURLResponse(
                 url: requestedURLs[index],
                 statusCode: code,

@@ -41,9 +41,7 @@ class RemoteFeedLoaderTests: XCTestCase {
         
         expect(sut, toCompleteWith: .failure(.connectivity), when: {
             let clientError = NSError(domain: "Test", code: 0)
-            
             client.complete(with: clientError)
-        
         })
     }
     
@@ -56,7 +54,6 @@ class RemoteFeedLoaderTests: XCTestCase {
                 let json = makeItemsJSON([])
                 client.complete(withStatusCode: code, data: json, at: index)
             })
-            
         }
         
     }
@@ -68,7 +65,6 @@ class RemoteFeedLoaderTests: XCTestCase {
             let invalidJSON = Data("invalid json".utf8)
             client.complete(withStatusCode: 200, data: invalidJSON)
         })
-        
     }
     
     func test_load_deliversNoItemsOn200HTTPResponseWithEmptyJSONList() {

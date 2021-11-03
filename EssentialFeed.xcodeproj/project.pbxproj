@@ -21,6 +21,7 @@
 		2E432F9A272A521900A872C7 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E432F99272A521900A872C7 /* RemoteFeedLoaderTests.swift */; };
 		2E432F9D272A8D5400A872C7 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E432F9C272A8D5400A872C7 /* RemoteFeedLoader.swift */; };
 		2E432F9F2732798500A872C7 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E432F9E2732798500A872C7 /* HTTPClient.swift */; };
+		2E432FA127327A0100A872C7 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E432FA027327A0100A872C7 /* FeedItemsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		2E432F99272A521900A872C7 /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		2E432F9C272A8D5400A872C7 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		2E432F9E2732798500A872C7 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		2E432FA027327A0100A872C7 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				2E432F9C272A8D5400A872C7 /* RemoteFeedLoader.swift */,
 				2E432F9E2732798500A872C7 /* HTTPClient.swift */,
+				2E432FA027327A0100A872C7 /* FeedItemsMapper.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				2E432F94272A430D00A872C7 /* FeedItem.swift in Sources */,
 				2E432F67272A429F00A872C7 /* ViewController.swift in Sources */,
 				2E432F63272A429F00A872C7 /* AppDelegate.swift in Sources */,
+				2E432FA127327A0100A872C7 /* FeedItemsMapper.swift in Sources */,
 				2E432F9F2732798500A872C7 /* HTTPClient.swift in Sources */,
 				2E432F96272A432000A872C7 /* FeedLoader.swift in Sources */,
 				2E432F9D272A8D5400A872C7 /* RemoteFeedLoader.swift in Sources */,

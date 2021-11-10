@@ -4,40 +4,34 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CI.xcscheme_^#shared#^_</key>
+		<key>EssentialFeedEndToEndTests.xcscheme_^#shared#^_</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>EssentialFeed.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-		<key>EssentialFeedAPIEndToEndTests.xcscheme_^#shared#^_</key>
-		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>EssentialFeedTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2E432F5E272A429F00A872C7</key>
+		<key>2EE339C1273BA70700B2C75E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2E432F74272A42A100A872C7</key>
+		<key>2EE339C9273BA70700B2C75E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2E432F7E272A42A100A872C7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2E432FC7273B229800A872C7</key>
+		<key>2EE339F3273BA80A00B2C75E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -31,6 +31,7 @@
 		2EE33A1727479D3000B2C75E /* ValidateFeedCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE33A1627479D3000B2C75E /* ValidateFeedCacheUseCaseTests.swift */; };
 		2EE33A192747AB1500B2C75E /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE33A182747AB1500B2C75E /* FeedCacheTestHelpers.swift */; };
 		2EE33A1B2747AC4200B2C75E /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE33A1A2747AC4200B2C75E /* SharedTestHelpers.swift */; };
+		2EE33A1D27482ED100B2C75E /* FeedCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE33A1C27482ED100B2C75E /* FeedCachePolicy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		2EE33A1627479D3000B2C75E /* ValidateFeedCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFeedCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		2EE33A182747AB1500B2C75E /* FeedCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCacheTestHelpers.swift; sourceTree = "<group>"; };
 		2EE33A1A2747AC4200B2C75E /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
+		2EE33A1C27482ED100B2C75E /* FeedCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCachePolicy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				2EE33A092746529200B2C75E /* LocalFeedLoader.swift */,
 				2EE33A0B2746533200B2C75E /* FeedStore.swift */,
 				2EE33A0F2746FC1300B2C75E /* LocalFeedImage.swift */,
+				2EE33A1C27482ED100B2C75E /* FeedCachePolicy.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				2EE339EA273BA7DD00B2C75E /* RemoteFeedLoader.swift in Sources */,
 				2EE339E7273BA7DD00B2C75E /* URLSessionHTTPClient.swift in Sources */,
 				2EE33A0E2746FB8E00B2C75E /* RemoteFeedItem.swift in Sources */,
+				2EE33A1D27482ED100B2C75E /* FeedCachePolicy.swift in Sources */,
 				2EE339EF273BA7E800B2C75E /* FeedItem.swift in Sources */,
 				2EE33A102746FC1300B2C75E /* LocalFeedImage.swift in Sources */,
 				2EE33A0C2746533200B2C75E /* FeedStore.swift in Sources */,

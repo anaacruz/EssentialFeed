@@ -1,9 +1,6 @@
-//
 //  CoreDataFeedStoreTests.swift
 //  EssentialFeedTests
-//
 //  Created by Ana Anguiano Cruz on 23/11/21.
-//
 
 import XCTest
 import EssentialFeed
@@ -18,7 +15,9 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
     }
     
     func test_retrieve_hasNoSideEffectsOnEmptyCache() {
-        
+        let sut = makeSUT()
+
+        assertThatRetrieveHasNoSideEffectsOnEmptyCache(on: sut)
     }
     
     func test_retrieve_deliversFoundValuesOnNonEmptyCache() {

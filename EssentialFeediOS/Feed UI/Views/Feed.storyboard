@@ -26,7 +26,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="580" id="V2b-TP-t9i">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="580" id="V2b-TP-t9i" customClass="FeedImageCell" customModule="EssentialFeediOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="60.5" width="414" height="580"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V2b-TP-t9i" id="1Y1-iv-LgZ">
@@ -77,6 +77,9 @@
                                                                 <fontDescription key="titleFontDescription" type="system" pointSize="60"/>
                                                                 <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="V2b-TP-t9i" eventType="touchUpInside" id="Kh4-fL-jNq"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -118,6 +121,14 @@
                                         <constraint firstItem="REM-qX-g0G" firstAttribute="top" secondItem="1Y1-iv-LgZ" secondAttribute="topMargin" priority="999" constant="6" id="qxn-dv-cke"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="Uyz-Ua-toq" id="2kQ-hB-ssT"/>
+                                    <outlet property="feedImageContainer" destination="p86-V0-BpU" id="hAt-xT-En1"/>
+                                    <outlet property="feedImageRetryButton" destination="RHC-He-xEc" id="T6a-Gt-nVI"/>
+                                    <outlet property="feedImageView" destination="bRF-ZB-I85" id="Ei3-9q-lWx"/>
+                                    <outlet property="locationContainer" destination="0SM-gC-OHr" id="gPP-sC-FDX"/>
+                                    <outlet property="locationLabel" destination="M34-nT-Bdv" id="KMr-kh-Q4Z"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

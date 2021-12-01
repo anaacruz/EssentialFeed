@@ -336,18 +336,10 @@
 		2E5225E72754B53E00C72F45 /* Feed UI */ = {
 			isa = PBXGroup;
 			children = (
-				2E5225E82754B55000C72F45 /* Controllers */,
-			);
-			path = "Feed UI";
-			sourceTree = "<group>";
-		};
-		2E5225E82754B55000C72F45 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
 				2E5225DA2754B24000C72F45 /* Helpers */,
 				2E5225CB2751732400C72F45 /* FeedUIIntegrationTests.swift */,
 			);
-			path = Controllers;
+			path = "Feed UI";
 			sourceTree = "<group>";
 		};
 		2E5225F72754D73C00C72F45 /* Composers */ = {
